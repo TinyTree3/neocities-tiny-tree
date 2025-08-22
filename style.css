@@ -40,3 +40,7 @@ body {
 #stamps-box img {
   max-width: 99px;
 }
+
+#blogposts {
+  width: 100%;
+}
