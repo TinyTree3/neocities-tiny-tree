@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Links</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+  </head>
+  
+  <body>
+    <div id="main-menu"></div>
+
+    <script>
+      fetch("../main-menu.html")
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("main-menu").innerHTML = html;
+        });
+    </script>
+
+    <div class="background">
+      <div class="window glass active" style="max-width: 540px; margin: 15% auto;">
+        <div class="title-bar">
+          <div class="title-bar-text">Cool Websites</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space ">
+          <p>Here are buttons to some cool websites with inspiring layouts and helpful resources!</p>
+          <div class="fun-container" id='buttons-box'>
+            <a href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
+            <a href='https://melonland.net'><img src='https://melonland.net/images/melonland-badge-2.gif' alt='MelonLand Project'></a>
+            <a href='https://32bit.cafe'><img src='https://32bit.cafe/linktous/32b-neon.gif' alt='32-bit cafe'></a>
+            <a href='https://www.thefrugalgamer.net'><img src='https://www.thefrugalgamer.net/img/links/frugalgamer_button1.png' alt='Frugal gamer'></a>
+            <a href='https://yesterweb.org/'><img src='https://yesterweb.org/img/button.png' alt='Yesterweb'></a>
+            <a href='https://sadgrl.online/'><img src='../assets/sadgrlonline.gif' alt='sad grl online'></a>
+            <a href='https://lostletters.neocities.org/'><img src='../assets/LostLetters88x31.gif' alt='Lost letters'></a>
+            <a href='https://clownfred.zone'><img src='https://clownfred.zone/!Media/cfredzonebutton-pink.gif' alt='Clown zone link'></a>
+            <a href='https://radiolights.neocities.org'><img src='https://radiolights.neocities.org/button.gif' alt='Radio lights link'></a>
+            <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif" alt="petrapixel"></a>
+            <a href='https://itinerae.neocities.org'><img src='https://files.catbox.moe/l5jmnh.png' alt='Itinerae link'></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

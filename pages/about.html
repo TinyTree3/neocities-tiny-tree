@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    
+  </head>
+  <body>
+    <div id="main-menu"></div>
+
+    <script>
+      fetch("../main-menu.html")
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("main-menu").innerHTML = html;
+        });
+    </script>
+    
+    <div class="background">
+      <div class="window glass active" style="max-width: 250px; margin: 30px; display: inline-block;">
+        <div class="title-bar">
+          <div class="title-bar-text">Find Me</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space" style="text-align: center;">
+          <img src="../assets/tinyTree.jpg" alt="Tiny Tree Profile Pic" style="max-width: 200px; margin-top: 10px; margin-left: auto; margin-right: auto;">
+          <p>I usually go by the username TinyTree3 on most websites. If you find me, say hi!</p>
+        </div>
+      </div>
+      
+      <div class="window glass active" style="max-width: 540px; margin: 15% auto; display: inline-block;">
+        <div class="title-bar">
+          <div class="title-bar-text">About Me!</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <p>
+            Hello! My name is Tree and I'm a college junior majoring in Computer Engineering in the US. In my free time, I like dabbling in hobbies and never sticking to them for more than a week. Some of my hobbies have included playing guitar and piano, learning French and Spanish, knitting, crocheting, reading, longboarding, archery, and going on late night walks.</p>
+          <ul>Media I'm Into:
+            <li>Favorite Books: Six of Crows Duology</li>
+            <li>Favorite TV Show: Modern Family</li>
+            <li>Favorite Game: Undertale</li>
+          </ul>
+          <p> 
+            I've been interested in making a personal and retro-style website after having nostalgia for Frutiger Aero and older technology in my childhood. I grew up using Windows 7 and I love the glassy, futuristic, and bright vibe it had. This inspired me to make this site with the limited HTML/CSS knowledge that I have. Hopefully I'm able to stick to it and keep it updated for many more years to come. Happy surfing! :)
+          </p>
+        </div>
+      </div>
+      
+      <div style="display: inline-block">
+        <div class="window glass active" style="max-width: 220px; margin: 30px;">
+          <div class="title-bar">
+            <div class="title-bar-text">Status</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body has-space">
+            <p>TinyTree3</p>
+            barely moved today with my eyes glued to the screen... still tired <div>(＠_＠;)</div>
+            <p>Feeling: <a href="https://www.imood.com/users/TinyTree3"><img src="https://moods.imood.com/display/uname-TinyTree3/fg-06402b/trans-1/imood.gif" alt="The current mood of TinyTree3 at www.imood.com" border="0"></a></p>
+            <p>Last listened to:</p>
+            <iframe src="https://petrapixel.neocities.org/widgets/lastfm?center=0&amp;marquee=0&amp;font-family=Verdana&amp;font-size=12px&amp;color=#06402B&amp;username=TinyTree3&amp;swapPositions=0&amp;delimiter=by&amp;underline=0" frameborder="0" title="Last.Fm Status" style='max-width: 200px; max-height: 30px;'></iframe>
+          </div>
+        </div>
+        
+        <div class="window glass active" style="max-width: 220px; margin: 30px;">
+          <div class="title-bar">
+            <div class="title-bar-text">Identity Buttons</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body has-space" style="text-align: center;">
+            <img src='../assets/sheher.png'>
+            <img src='../assets/lesbian.png'>
+            <img src='../assets/student.png'>
+            <img src='../assets/central.png'>
+            <img src='../assets/indian.png'>
+            <img src='../assets/american.png'>
+            <img src='../assets/intp.png'>
+            <img src='../assets/type9.png'>
+            <img src='../assets/taurus.png'>
+            <img src='../assets/rooster.png'>
+            <img src='../assets/willow.png'>
+            <img src='../assets/slytherin.png'>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
