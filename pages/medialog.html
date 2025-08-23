@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Log</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+  </head>
+  
+  <body>
+    <div id="main-menu"></div>
+
+    <script>
+      fetch("../main-menu.html")
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("main-menu").innerHTML = html;
+        });
+    </script>
+
+    <div class="background">
+      <div class="window glass active" style="max-width: 540px; margin: 50px auto;">
+        <div class="title-bar">
+          <div class="title-bar-text">Media Log</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <p>This is a log of anything interesting I have watched/read since August 2025. Any media I have written a review for will have an (x) next to it linking to the review. If you have any recommendations for me, let me know in the chatbox or guestbook!</p>
+          
+          <h3>Books</h3>
+          <p>Midnight Library - Matt Haig [in progress]</p>
+
+          <img class='divider' src='../assets/plantdivider.png'>
+
+          <h3>Articles</h3>
+          <p>2025-08-18: <a href="https://contemplationstation.substack.com/p/how-to-expand-time-the-neuroscience">How to Slow Down Time</a></p>
+          <p>2025-08-18: <a href="https://contemplationstation.substack.com/p/why-we-get-in-our-own-way-the-neuroscience">Why We Get in Our Own Way</a></p>
+          <p>2025-08-17: <a href="https://mapuc.substack.com/p/where-to-find-media-to-consume-instead">Where to Find Media to Consume Instead of Doomscrolling</a></p>
+          <p>2025-08-15: <a href="https://plumpits.substack.com/p/unrot-your-brain">Unrot Your Brain</a></p>
+
+          <img class='divider' src='../assets/plantdivider.png'>
+
+          <h3>Movies</h3>
+          <p>2025-08-19: Perfect Days (2023)</p>
+          
+          <img class='divider' src='../assets/plantdivider.png'>
+
+          <h3>TV Shows</h3>
+          <p>The Summer I Turned Pretty [in progress]</p>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
