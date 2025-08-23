@@ -1,3 +1,12 @@
+html {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+*, #main-menu, html, body {
+  cursor: url('../assets/NatureNormal.cur'), auto;
+}
+
 body {
   margin: 0;
   background-image: url('background.jpg');
@@ -10,6 +19,31 @@ body {
   font-family: Verdana;
 }
 
+*::selection {
+  background: #06402B;
+  color: #bfdf94;
+}
+*::-moz-selection {
+  background: #06402B;
+  color: #bfdf94;
+}
+*::-webkit-selection {
+  background: #06402B;
+  color: #bfdf94;
+}
+
+a, button, [role="button"], a img, #main-menu li {
+  cursor: url('../assets/NatureLinkSelect.cur'), pointer;
+}
+
+input[type="text"], textarea, .text-area, p, span, li, h1, h2, h3, h4, h5, h6, strong, em{
+  cursor: url('../assets/NatureText.cur'), text;
+}
+
+.disabled, button:disabled, input:disabled {
+  cursor:url('../assets/NatureUnavailable.cur'), not-allowed;
+}
+
 .fun-container {
   display: flex; 
   flex-wrap: wrap; 
@@ -18,16 +52,21 @@ body {
   align-content: space-around;
 }
 
+.fun-container img:hover {
+  transform: scale(1.20);
+  transition: transform 0.1s;
+}
+
 .divider {
   display: block; 
   margin: 30px auto;
 }
 
 #main-menu {
-   font-size:12px; 
-   position: sticky; 
-   top: 0; 
-   z-index: 999;
+  font-size:12px; 
+  position: sticky; 
+  top: 0; 
+  z-index: 999;
 }
 #buttons-box img {
   max-width: 88px;

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Ideas</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+  </head>
+  
+  <body>
+    <div id="main-menu"></div>
+
+    <script>
+      fetch("../main-menu.html")
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("main-menu").innerHTML = html;
+        });
+    </script>
+
+    <div class="background">
+      <div class="window glass active" style="max-width: 540px; margin: 50px auto;">
+        <div class="title-bar">
+          <div class="title-bar-text">Future Site Ideas</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <ul>
+            <li>Links page extension with my bookmarks</li>
+            <li>Personal dashboard with news, weather, daily quote, etc.</li>
+            <li>A longer form blog separate from updates page (if I can stick to writing)</li>
+            <li>Custom scrollbar and cursor trail</li>
+            <li>88x31 button for Tree's Forest</li>
+            <li>Webrings page when I join some</li>
+            <li>Background switcher</li>
+            <li>Recipes page</li>
+            <li>Dark mode</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
